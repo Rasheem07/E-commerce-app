@@ -1,0 +1,125 @@
+/* #searchbtn{
+  color: #333333;
+}*/
+.absolute-center{
+  position: absolute !important;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.custom-autocomplete{
+  z-index: 999;
+  margin: 1vh 0;
+}
+#brand{
+  margin-left: 2vw;
+}
+
+#active:hover{
+  text-decoration: none !important;
+}
+.nav-link:hover{
+   text-decoration: underline !important;
+   font-weight: 400 !important;
+   color: #fff !important;
+}
+
+.wrapper{
+  width: 25vw !important;
+  position:  relative !important;
+  margin: 0 5vw !important;
+}
+
+.jiMOeR {
+  position: relative !important;
+}
+
+.sc-dcJsrY{
+  padding: 0.4vh 0 !important;
+}
+.dYrfwz{
+  min-height: 6vh !important;
+  margin:  0;
+}
+.jiMOeR .wrapper{
+  /* height: 5.5vh; */
+  border-radius: 4px !important;
+}
+.dYrfwz input[type="text"]{
+  border-radius: none;
+}
+
+.wrapper li{
+  opacity: 1 !important;
+}
+.search-wrapper{
+   width: 20vw !important;
+   margin: auto;
+   position: relative;
+   margin: 0;
+   margin-left: 3vw !important;
+}
+
+
+/* .search-wrapper .search-field{
+  width: 100% !important;
+  /* position: relative; */
+  /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) !important; */
+
+
+/* .search-field input{
+  width: 100% !important;
+  height: 6vh;
+  border: none !important;
+  outline: none !important;
+  box-shadow:none !important;
+  border-radius: 4px 0 0 0 !important;
+} */
+
+.cta{
+  margin-left: 2vw !important;
+  margin-right: 0vw !important;
+}
+
+#login:hover{
+   background-color: rgba(242, 242, 242, 0.9) !important;
+   /* color: #fff !important; */
+}
+.cta button{
+  margin: 0 1vw !important;
+  border-radius: 4px !important;
+} 
+
+.navbar-nav li{
+  font-size: 18px !important;
+  padding: 0.8vh 0.5vw !important;
+}
+
+
+@media only screen and (max-width: 992px) {
+  
+.navbar-nav li{
+  font-size: 16px !important;
+  padding: 0.5vh 5vw !important;
+}
+
+  .cta button{
+    margin: 1vh 1.5vw !important;
+  } 
+  
+  #searchbtn{
+    padding: 0.5vh 0.8vw;
+    font-size: 14px;
+    border: none;
+  }
+  .navbar-toggler{
+    margin-right: 2vw;
+  }
+
+  .jiMOeR .wrapper{
+    min-width: 75vw !important;
+    margin: 0 auto !important;
+  }
+}

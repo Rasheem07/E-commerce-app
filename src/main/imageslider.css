@@ -1,0 +1,17 @@
+.image-gallery .image-gallery-image{
+    max-height: 60vh !important;
+    min-width: 100% !important;
+    border-radius: 4px !important;
+    /* object-fit:inherit !important; */
+}
+
+.image-gallery{
+    max-width: 80vw !important;
+    padding: 2vh;
+    margin: 2vh auto;
+    background-color: rgba(255, 255, 255, 0.12);;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    border-radius: 9px;
+    z-index: inherit !important;
+    /* position: absolute; */
+}

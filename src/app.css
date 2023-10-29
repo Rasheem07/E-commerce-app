@@ -1,0 +1,7 @@
+.blur{
+    filter: blur(5px);
+}
+
+.bg{
+    background: #f2f2f2;
+}
