@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Edu+SA+Beginner&family=Montserrat:wght@500&family=Open+Sans&family=Playfair+Display&family=Poppins:ital@1&family=Raleway&family=Roboto&family=Ubuntu&display=swap');
+
 .category-card img {
     height: 150px !important;
     width: 150px !important;
@@ -37,6 +39,16 @@
     overflow-x: scroll !important;
 }
 
+.category-row .pricerange{
+    font-family: 'Roboto', sans-serif !important;
+    color: #4CAF50 ;
+}
+
+.category-row .des{
+    font-family: 'Open-sans', sans-serif !important;
+    font-size: 12px !important;
+    color: #333333;
+}
 @media only screen and (max-width:480px) {
     .category-card img{
         height: 120px !important;
