@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Rasheem07/E-commerce-app/static/css/main.79025a92.css",
+    "main.js": "/Rasheem07/E-commerce-app/static/js/main.392904a7.js",
+    "static/js/496.10232e93.chunk.js": "/Rasheem07/E-commerce-app/static/js/496.10232e93.chunk.js",
+    "index.html": "/Rasheem07/E-commerce-app/index.html",
+    "main.79025a92.css.map": "/Rasheem07/E-commerce-app/static/css/main.79025a92.css.map",
+    "main.392904a7.js.map": "/Rasheem07/E-commerce-app/static/js/main.392904a7.js.map",
+    "496.10232e93.chunk.js.map": "/Rasheem07/E-commerce-app/static/js/496.10232e93.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79025a92.css",
+    "static/js/main.392904a7.js"
+  ]
+}
