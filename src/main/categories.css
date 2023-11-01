@@ -8,8 +8,9 @@
 }
 
 .category-card{
-    margin: 0 1vw !important;
-    padding: 0 1vw !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .custom-card1{
@@ -19,9 +20,9 @@
     border-radius: 6px;
     width: 100% !important;
     height: auto !important;
-    max-width: 90vw !important;
+    max-width: 92vw !important;
     height: auto !important;
-    margin: 4vh  4vw !important;
+    margin: 4vh auto !important;
 }
 
 .category-row::-webkit-scrollbar{
@@ -41,7 +42,7 @@
 
 .category-row .pricerange{
     font-family: 'Roboto', sans-serif !important;
-    color: #4CAF50 ;
+    color: #186A3B;
 }
 
 .category-row .des{
@@ -49,10 +50,41 @@
     font-size: 12px !important;
     color: #333333;
 }
+
+.category-row .totalamount { 
+    text-align: center !important; 
+    display: block ;
+    font-size: 11px;
+    /* margin: -5px; */
+     font-family: 'Open-sans', sans-serif;
+}
+
+.category-row .save-price{
+    font-size: 14px; 
+    color: #D9534F;
+}
+
+.category-row .product-name{
+    font-size: 18px !important;
+    font-family: "Ubuntu", sans-serif;
+    letter-spacing: 0.02rem;
+}
+
+.category-card:hover{
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.12);
+    background-color: white;
+    /* transform: scale(1.04); */
+}
 @media only screen and (max-width:480px) {
     .category-card img{
         height: 120px !important;
         width: 120px !important;
+    }
+    .custom-card1{
+        padding: 1vh 1vw !important;
+    }
+    .pricerange{
+        padding: 0.5vh 0 !important;
     }
 }
 

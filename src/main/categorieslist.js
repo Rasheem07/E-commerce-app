@@ -1,4 +1,4 @@
-export const categories_row1 = [
+export const categories = [
     {
         id: 1,
         name: "Electronics",
@@ -16,7 +16,7 @@ export const categories_row1 = [
     {
         id: 3,
         name: "Home & Kitchen",
-        description: "Household essentials and decor",
+        description: "Household essentials",
         priceRange: "$5 - $500",
         imageURL: "home and kitchen.webp"
     },
@@ -30,14 +30,14 @@ export const categories_row1 = [
     {
         id: 5,
         name: "Health & Beauty",
-        description: "Wellness and personal care products",
+        description: "personal care products",
         priceRange: "$5 - $200",
         imageURL: "health and beauty.webp"
     },
     {
         id: 6,
         name: "Toys & Games",
-        description: "Fun and entertainment items",
+        description: "toys & borad games",
         priceRange: "$5 - $200",
         imageURL: "toys.webp"
     },
@@ -51,142 +51,178 @@ export const categories_row1 = [
     {
         id: 8,
         name: "Jewelry",
-        description: "Shiny and elegant adornments",
+        description: "elegant adornments",
         priceRange: "$20 - $5000",
         imageURL: "jewelry.jpg"
     },
 ];
-const row2 = [
+
+export const topDeals = [
     {
-        id: 9,
-        name: "Books and Literature",
-        description: "Words and stories to explore",
-        priceRange: "$5 - $50",
+      id: 1,
+      product: "Smart TV",
+      price: "$" + (499.99 - 100.00).toFixed(2),
+      save: "$" + 100.00.toFixed(2),
+      totalAmount: "$499.99",
+      imageURL: "smart tv.webp"
     },
     {
-        id: 10,
-        name: "Automotive",
-        description: "Car parts and accessories",
-        priceRange: "$10 - $500",
+      id: 2,
+      product: "Laptop",
+      price: "$" + (899.00 - 200.00).toFixed(2),
+      save: "$" + 200.00.toFixed(2),
+      totalAmount: "$899.00",
+      imageURL: "laptop.jpg"
     },
     {
-        id: 11,
-        name: "Garden and Outdoor",
-        description: "Tools for green spaces",
-        priceRange: "$5 - $300",
+      id: 3,
+      product: "Designer Watch",
+      price: "$" + (199.99 - 50.00).toFixed(2),
+      save: "$" + 50.00.toFixed(2),
+      totalAmount: "$199.99",
+      imageURL: "designer watch.jpg"
     },
     {
-        id: 12,
-        name: "Pet Supplies",
-        description: "For your furry friends",
-        priceRange: "$5 - $200",
+      id: 4,
+      product: "Headphones",
+      price: "$" + (69.99 - 20.00).toFixed(2),
+      save: "$" + 20.00.toFixed(2),
+      totalAmount: "$69.99",
+      imageURL: "headphones.jpg"
     },
     {
-        id: 13,
-        name: "Watches",
-        description: "Timekeeping with style",
-        priceRange: "$20 - $1000",
+      id: 5,
+      product: "Kitchen Mixer",
+      price: "$" + (129.95 - 30.00).toFixed(2),
+      save: "$" + 30.00.toFixed(2),
+      totalAmount: "$129.95",
+      imageURL: "mixer.jpg"
     },
     {
-        id: 14,
-        name: "Office Supplies",
-        description: "Workplace essentials and stationery",
-        priceRange: "$5 - $200",
+      id: 6,
+      product: "Running Shoes",
+      price: "$" + (79.99 - 10.00).toFixed(2),
+      save: "$" + 10.00.toFixed(2),
+      totalAmount: "$79.99",
+      imageURL: "running-shoes.jpg"
     },
     {
-        id: 15,
-        name: "Music and Instruments",
-        description: "Instruments and melodies galore",
-        priceRange: "$50 - $5000",
+      id: 7,
+      product: "Smartphone",
+      price: "$" + (699.00 - 100.00).toFixed(2),
+      save: "$" + 100.00.toFixed(2),
+      totalAmount: "$699.00",
+      imageURL: "smartphone.jpg"
     },
     {
-        id: 16,
-        name: "Art and Craft",
-        description: "Supplies for creative minds",
-        priceRange: "$5 - $200",
+      id: 8,
+      product: "Digital Camera",
+      price: "$" + (449.00 - 50.00).toFixed(2),
+      save: "$" + 50.00.toFixed(2),
+      totalAmount: "$449.00",
+      imageURL: "digital camera.jpg"
     },
     {
-        id: 17,
-        name: "Baby and Maternity",
-        description: "For growing families",
-        priceRange: "$10 - $200",
+      id: 9,
+      product: "Cookware Set",
+      price: "$" + (149.99 - 30.00).toFixed(2),
+      save: "$" + 30.00.toFixed(2),
+      totalAmount: "$149.99",
+      imageURL: "cookware-set.jpg"
     },
     {
-        id: 18,
-        name: "Food and Groceries",
-        description: "Culinary delights for all",
-        priceRange: "$2 - $100",
+      id: 10,
+      product: "Coffee Machine",
+      price: "$" + (79.95 - 20.00).toFixed(2),
+      save: "$" + 20.00.toFixed(2),
+      totalAmount: "$79.95",
+      imageURL: "coffee machine.jpg"
+    },
+  ];
+
+  export const trendings = [
+    {
+      id: 1,
+      product: "Smartwatch",
+      price: "$149.99",
+      save: "$30.00",
+      totalAmount: "$179.99",
+      imageURL: "smart-watch.jpg"
     },
     {
-        id: 19,
-        name: "Shoes",
-        description: "Footwear for every occasion",
-        priceRange: "$20 - $200",
+      id: 2,
+      product: "Men's Dress Shoes",
+      price: "$79.00",
+      save: "$20.00",
+      totalAmount: "$99.00",
+      imageURL: "mens-dress-shoes.jpg"
     },
     {
-        id: 20,
-        name: "Luggage and Travel",
-        description: "Essentials for the journey",
-        priceRange: "$30 - $300",
+      id: 3,
+      product: "Gourmet Coffee Set",
+      price: "$34.95",
+      save: "$10.00",
+      totalAmount: "$44.95",
+      imageURL: "coffee set.jpg"
     },
     {
-        id: 21,
-        name: "Electronics Accessories",
-        description: "Enhancements for your gadgets",
-        priceRange: "$5 - $100",
+      id: 4,
+      product: "Fashion Sunglasses",
+      price: "$49.99",
+      save: "$15.00",
+      totalAmount: "$64.99",
+      imageURL: "sunglasses.jpg"
     },
     {
-        id: 22,
-        name: "Fitness and Gym",
-        description: "Gear for active living",
-        priceRange: "$20 - $500",
+      id: 5,
+      product: "Wireless Speaker",
+      price: "$89.95",
+      save: "$25.00",
+      totalAmount: "$114.95",
+      imageURL: "soundbox.jpg"
     },
     {
-        id: 23,
-        name: "Appliances",
-        description: "Home and kitchen conveniences",
-        priceRange: "$50 - $1000",
+      id: 6,
+      product: "Luxury Bedding Set",
+      price: "$199.99",
+      save: "$50.00",
+      totalAmount: "$249.99",
+      imageURL: "bedding-set.webp"
     },
     {
-        id: 24,
-        name: "Home Decor",
-        description: "Stylish accents for interiors",
-        priceRange: "$10 - $200",
+      id: 7,
+      product: "Artisan Chocolate Box",
+      price: "$29.99",
+      save: "$5.00",
+      totalAmount: "$34.99",
+      imageURL: "chocolate-box.webp"
     },
     {
-        id: 25,
-        name: "Software and Apps",
-        description: "Digital solutions and entertainment",
-        priceRange: "$5 - $100",
+      id: 8,
+      product: "Women's Sneakers",
+      price: "$69.95",
+      save: "$15.00",
+      totalAmount: "$84.95",
+      imageURL: "women's-sneakers.jpg"
     },
     {
-        id: 26,
-        name: "Mobile Accessories",
-        description: "Enhancements for your phone",
-        priceRange: "$5 - $100",
+      id: 9,
+      product: "Portable Espresso Maker",
+      price: "$69.00",
+      save: "$10.00",
+      totalAmount: "$79.00",
+      imageURL: "espresso-maker.jpg"
     },
     {
-        id: 27,
-        name: "Tools and Home Improvement",
-        description: "Equipment for DIY projects",
-        priceRange: "$10 - $500",
+      id: 10,
+      product: "Outdoor Camping Gear",
+      price: "$249.99",
+      save: "$40.00",
+      totalAmount: "$289.99",
+      imageURL: "camping-gear.jpg"
     },
-    {
-        id: 28,
-        name: "Watches and Accessories",
-        description: "Timepieces and add-ons",
-        priceRange: "$20 - $500",
-    },
-    {
-        id: 29,
-        name: "Cameras and Photography",
-        description: "Capturing moments in pixels",
-        priceRange: "$50 - $2000",
-    },
-    {
-        id: 30,
-        name: "Industrial and Scientific",
-        description: "Tools for professionals and scientists",
-        priceRange: "$20 - $5000",
-    },
-];
+  ];
+  
+  
+  
+  
