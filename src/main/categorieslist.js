@@ -223,6 +223,88 @@ export const topDeals = [
     },
   ];
   
+  export const recommendedProducts = [
+    {
+      id: 1,
+      product: "Gaming Console",
+      price: 499.99,
+      save: 50.00,
+      totalAmount: 549.99,
+      imageURL: "gaming-console.jpg"
+    },
+    {
+      id: 2,
+      product: "Noise-Canceling Earbuds",
+      price: 249.00,
+      save: 30.00,
+      totalAmount: 279.00,
+      imageURL: "noise-canceling-earbuds.jpg"
+    },
+    {
+      id: 3,
+      product: "Chef's Knife Set",
+      price: 149.95,
+      save: 25.00,
+      totalAmount: "174.95",
+      imageURL: "chef-knife-set.jpg"
+    },
+    {
+      id: 4,
+      product: "Travel Backpack",
+      price: "79.99",
+      save: "10.00",
+      totalAmount: "89.99",
+      imageURL: "travel-backpack.jpg"
+    },
+    {
+      id: 5,
+      product: "Smart Thermostat",
+      price: "149.00",
+      save: "20.00",
+      totalAmount: "169.00",
+      imageURL: "smart-thermostat.jpg"
+    },
+    {
+      id: 6,
+      product: "Designer Sunglasses",
+      price: "169.99",
+      save: "30.00",
+      totalAmount: "199.99",
+      imageURL: "designer-sunglasses.jpg"
+    },
+    {
+      id: 7,
+      product: "Portable Outdoor Grill",
+      price: "129.00",
+      save: "15.00",
+      totalAmount: "144.00",
+      imageURL: "outdoor-grill.jpg"
+    },
+    {
+      id: 8,
+      product: "Camera System",
+      price: "299.99",
+      save: "50.00",
+      totalAmount: "349.99",
+      imageURL: "security-camera.jpg"
+    },
+    {
+      id: 9,
+      product: "Luxurious Velvet Sofa",
+      price: "799.00",
+      save: "100.00",
+      totalAmount: "899.00",
+      imageURL: "velvet-sofa.jpg"
+    },
+    {
+      id: 10,
+      product: "Digital Drawing Tablet",
+      price: "199.99",
+      save: "30.00",
+      totalAmount: "229.99",
+      imageURL: "drawing-tablet.jpg"
+    },
+  ];
   
   
   

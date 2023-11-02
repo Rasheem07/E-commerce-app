@@ -2,6 +2,7 @@ import React from 'react';
 import { categories } from './categorieslist';
 import { topDeals } from './categorieslist';
 import { trendings } from './categorieslist';
+import { recommendedProducts } from './categorieslist';
 import "./categories.css"
 
 export function Category() {
@@ -15,7 +16,7 @@ export function Category() {
             <div className='category-card'>
               <img src={category.imageURL} alt={category.name} />
               <p className='p-0 m-0 product-name'>{category.name}</p>
-              <p className="p-1 m-0 pricerange" >{category.priceRange}</p>
+              <p className="p-0 m-0 pricerange" >{category.priceRange}</p>
                 <p className="p-0 m-0 des" style={{ fontSize: "12px" }}>
                   {category.description}
                 </p>
@@ -31,9 +32,9 @@ export function Category() {
           <div className='col-md-3 col-lg-2 col-sm-6' key={deal.id}>
             <div className='category-card'>
               <img src={deal.imageURL} alt={deal.name} />
-              <p className='p-0 pb-1 m-0 product-name'>{deal.product}</p>
+              <p className='p-0 m-0 product-name'>{deal.product}</p>
               <p className="p-0 m-0 pricerange" >{deal.price}</p>
-              <del className="p-0 m-0 totalamount">{deal.totalAmount}</del>
+              {/* <del className="p-0 m-0 totalamount">{deal.totalAmount}</del> */}
                 <p className="p-0 m-0 save-price">
                   Save:{deal.save}
                 </p>
@@ -51,7 +52,7 @@ export function Category() {
               <img src={trending.imageURL} alt={trending.name} />
               <p className='p-0 m-0 product-name'>{trending.product}</p>
               <p className="p-0 m-0 pricerange" >{trending.price}</p>
-              <del className="p-0 m-0 totalamount">{trending.totalAmount}</del>
+              {/* <del className="p-0 m-0 totalamount">{trending.totalAmount}</del> */}
                 <p className="p-0 m-0 save-price">
                   Save:{trending.save}
                 </p>
@@ -61,16 +62,17 @@ export function Category() {
       </div>
       </div>
     <div className="card custom-card1 p-0">
-      <h2 className='my-0'>Essentials:</h2>
+      <h2 className='my-0'>Most recommended:</h2>
       <div className='category-row'>
-     {categories.map((category) => (
-          <div className='col-md-3 col-lg-2 col-sm-6' key={category.id}>
+     {recommendedProducts.map((product) => (
+          <div className='col-md-3 col-lg-2 col-sm-6' key={product.id}>
             <div className='category-card'>
-              <img src={category.imageURL} alt={category.name} />
-              <p className='p-0 m-0 product-name'>{category.name}</p>
-              <p className="p-1 m-0 pricerange" >{category.priceRange}</p>
-                <p className="p-0 m-0 des" style={{ fontSize: "10px" }}>
-                  {category.description}
+              <img src={product.imageURL} alt={product.name} />
+              <p className='p-0 m-0 product-name'>{product.product}</p>
+              <p className="p-0 m-0 pricerange" >${product.price}</p>
+              {/* <del className="p-0 m-0 totalamount">{product.totalAmount}</del> */}
+                <p className="p-0 m-0 save-price">
+                  offer:{(((product.totalAmount - product.price )/ product.totalAmount) * 100).toFixed(2)}%
                 </p>
             </div>
           </div>
