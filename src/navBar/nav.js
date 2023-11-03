@@ -5,6 +5,7 @@ import { ReactSearchAutocomplete } from "react-search-autocomplete";
 import { useState} from "react";
 import LoginPage from "./login";
 import Signup from "./signup";
+import { Link } from "react-router-dom";
 
 function Nav() {
   const [displayLogin, setDisplayLogin] = useState("none");
@@ -97,29 +98,29 @@ function handleClickOnSignup(){
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link active"
                 id="active"
                 aria-current="page"
-                href="#"
+                to="/"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/about">
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/contact">
                 Contact
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/more">
                 More
-              </a>
+              </Link>
             </li>
           </ul>
           <ReactSearchAutocomplete

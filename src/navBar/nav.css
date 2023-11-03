@@ -46,6 +46,7 @@
 .jiMOeR .wrapper{
   /* height: 5.5vh; */
   border-radius: 4px !important;
+  margin: 0 auto !important;
 }
 .dYrfwz input[type="text"]{
   border-radius: none;
@@ -60,16 +61,16 @@
    position: relative;
    margin: 0;
    margin-left: 3vw !important;
-}
+  }
+  
+  
+  /* .search-wrapper .search-field{
+    width: 100% !important;
+    /* position: relative; */
+    /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) !important; */
 
-
-/* .search-wrapper .search-field{
-  width: 100% !important;
-  /* position: relative; */
-  /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) !important; */
-
-
-/* .search-field input{
+    
+    /* .search-field input{
   width: 100% !important;
   height: 6vh;
   border: none !important;
@@ -99,13 +100,16 @@
 
 
 @media only screen and (max-width: 992px) {
-  
+  .jiMOeR .wrapper{
+  min-width: 70vw !important;
+  }
+
 .navbar-nav li{
   font-size: 16px !important;
   padding: 0.5vh 5vw !important;
 }
 
-  .cta button{
+.cta button{
     margin: 1vh 1.5vw !important;
   } 
   
@@ -117,7 +121,7 @@
   .navbar-toggler{
     margin-right: 2vw;
   }
-
+  
   .jiMOeR .wrapper{
     min-width: 75vw !important;
     margin: 0 auto !important;
