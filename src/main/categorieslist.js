@@ -234,11 +234,11 @@ export const topDeals = [
     },
     {
       id: 2,
-      product: "Noise-Canceling Earbuds",
+      product: "Noise-Cancel Earbuds",
       price: 249.00,
       save: 30.00,
       totalAmount: 279.00,
-      imageURL: "noise-canceling-earbuds.jpg"
+      imageURL: "earbuds.jpg"
     },
     {
       id: 3,
@@ -246,7 +246,7 @@ export const topDeals = [
       price: 149.95,
       save: 25.00,
       totalAmount: "174.95",
-      imageURL: "chef-knife-set.jpg"
+      imageURL: "knife-set.jpg"
     },
     {
       id: 4,
@@ -254,7 +254,7 @@ export const topDeals = [
       price: "79.99",
       save: "10.00",
       totalAmount: "89.99",
-      imageURL: "travel-backpack.jpg"
+      imageURL: "backpack.jpg"
     },
     {
       id: 5,
@@ -278,7 +278,7 @@ export const topDeals = [
       price: "129.00",
       save: "15.00",
       totalAmount: "144.00",
-      imageURL: "outdoor-grill.jpg"
+      imageURL: "portable-grill.jpg"
     },
     {
       id: 8,
@@ -294,7 +294,7 @@ export const topDeals = [
       price: "799.00",
       save: "100.00",
       totalAmount: "899.00",
-      imageURL: "velvet-sofa.jpg"
+      imageURL: "velvet sofa.jpg"
     },
     {
       id: 10,
