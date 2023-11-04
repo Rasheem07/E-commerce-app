@@ -1,0 +1,19 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+  }
+  
+  /* Add any other custom styles as needed */
+  

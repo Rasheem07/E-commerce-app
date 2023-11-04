@@ -4,15 +4,20 @@ import { topDeals } from './categorieslist';
 import { trendings } from './categorieslist';
 import { recommendedProducts } from './categorieslist';
 import "./categories.css"
+import { Link } from 'react-router-dom';
 
-export function Category() {
+export function Category({setselectedcategory}) {
+  function handleClickOnCategories({category}){
+    setselectedcategory(category)
+  }
   return (
     <>
     <div className="card custom-card1">
       <h2 className='my-0'>Shop by Categories:</h2>
       <div className='category-row'>
         {categories.map((category) => (
-          <div className='col-md-3 col-lg-2 col-sm-6' key={category.id}>
+          <div className='col-md-3 col-lg-2 col-sm-6' key={category.id} onClick={handleClickOnCategories(category.name)}>
+            <Link to='/listing'>
             <div className='category-card'>
               <img src={category.imageURL} alt={category.name} />
               <p className='p-0 m-0 product-name'>{category.name}</p>
@@ -21,6 +26,7 @@ export function Category() {
                   {category.description}
                 </p>
             </div>
+          </Link>
           </div>
         ))}
       </div>
