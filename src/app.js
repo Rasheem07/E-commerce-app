@@ -14,7 +14,7 @@ export default function App() {
       <Nav />
       <Routes>
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/" element={<Main className="bg" set={setselectedCategory}/>} />
+        <Route path="/E-commerce-app" element={<Main className="bg" set={setselectedCategory}/>} />
         <Route path="/contact" element={<ContactPage />} />
         <Route
           path="/listing" exact

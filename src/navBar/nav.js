@@ -102,7 +102,7 @@ function handleClickOnSignup(){
                 className="nav-link active"
                 id="active"
                 aria-current="page"
-                to="/"
+                to="/E-commerce-app"
               >
                 Home
               </Link>
