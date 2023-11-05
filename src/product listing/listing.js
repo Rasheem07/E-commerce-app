@@ -17,11 +17,15 @@ function Listing() {
     setTimeout(() => {
       try {
         // Filter the products based on the selected category or show all products
-        const filtered = categories.filter(
-          (product) =>
-            category === "All" || product.category === category
-        );
-        setFilteredProducts(filtered);
+        const filtered = categories.find((cat) => cat.category === category);
+
+        if (filtered) {
+          setFilteredProducts(filtered.products);
+        } else {
+          // Handle the case when the selected category is not found
+          setError("Category not found");
+        }
+
         setLoading(false);
       } catch (err) {
         setError(err);
@@ -31,15 +35,19 @@ function Listing() {
   }, [category]);
 
   if (loading) {
-    return <div className="text-center h4">Loading...</div>;
+    return (
+      <div className="text-center loader" style={{ fontSize: "32px", minHeight: "85vh", display: "grid", placeItems: "center" }}>
+        Loading...
+      </div>
+    );
   }
 
   if (error) {
-    return <div>Error: {error.message}</div>;
+    return <div>Error: {error}</div>;
   }
 
   return (
-    <div className="container mt-5 card p-3">
+    <div className="container mt-3 card p-3" style={{minWidth: "92vw"}}>
       <div className="row">
         <div className="col-lg-3 col-md-4 col-sm-12 mb-4">
           <div className="filter-sidebar">
@@ -56,7 +64,7 @@ function Listing() {
           <div className="row">
             {filteredProducts.map((product) => (
               <div key={product.id} className="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
-                <div className="card product-card">
+                <div className="pt-2 card product-card">
                   <img
                     src={product.imageURL}
                     className="card-img-top"
@@ -64,7 +72,7 @@ function Listing() {
                   />
                   <div className="card-body">
                     <h5 className="card-title">{product.name}</h5>
-                    <p className="card-text">${product.priceRange}</p>
+                    <p className="card-text">{product.price}</p>
                     <p className="card-text">
                       <small className="text-muted">Discount: $100</small>
                     </p>

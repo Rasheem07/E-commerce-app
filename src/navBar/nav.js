@@ -102,23 +102,23 @@ function handleClickOnSignup(){
                 className="nav-link custom-link active"
                 id="active"
                 aria-current="page"
-                to="/"
+                to="/E-commerce-app"
               >
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/E-commerce-app/about">
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
+              <Link className="nav-link" to="/E-commerce-app/contact">
                 Contact
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/more">
+              <Link className="nav-link" to="/E-commerce-app/more">
                 More
               </Link>
             </li>
