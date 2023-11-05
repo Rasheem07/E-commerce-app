@@ -6,18 +6,20 @@ import ContactPage from "./navigations/contactPage";
 import Listing from "./product listing/listing";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState } from "react";
+import { Category } from "./main/categories";
 
 export default function App() {
+  const [category, setcategory] = useState('')
   const [selectedCategory, setselectedCategory] = useState("all")
   return (
     <Router>
       <Nav />
       <Routes>
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/E-commerce-app" element={<Main className="bg" set={setselectedCategory}/>} />
+        <Route path="/" exact element={<Main className="bg" set={setselectedCategory} set2={category} set3={setcategory}/>} />
         <Route path="/contact" element={<ContactPage />} />
         <Route
-          path="/listing" exact
+          path={`/${category}`} exact
           element={<Listing selectedCategory={selectedCategory} />}
         />
       </Routes>

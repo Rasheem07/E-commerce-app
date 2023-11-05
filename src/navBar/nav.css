@@ -1,6 +1,10 @@
 /* #searchbtn{
   color: #333333;
 }*/
+a{
+  text-decoration: none;
+  color: #333333;
+}
 .absolute-center{
   position: absolute !important;
   top: 50%;

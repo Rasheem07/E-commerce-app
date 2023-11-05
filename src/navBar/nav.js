@@ -99,10 +99,10 @@ function handleClickOnSignup(){
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link
-                className="nav-link active"
+                className="nav-link custom-link active"
                 id="active"
                 aria-current="page"
-                to="/E-commerce-app"
+                to="/"
               >
                 Home
               </Link>

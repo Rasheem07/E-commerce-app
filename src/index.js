@@ -4,6 +4,14 @@ import './index.css';
 import App from './app';
 import reportWebVitals from './reportWebVitals';
 
+window.addEventListener('beforeunload', (event) => {
+  // Cancel the event
+  event.preventDefault();
+  // Chrome requires returnValue to be set
+  event.returnValue = '';
+});
+
+
 const main = ReactDOM.createRoot(document.getElementById('root'));
 main.render(
   <React.StrictMode>
