@@ -3,8 +3,7 @@ import { useParams } from "react-router-dom";
 import { categories } from "../main/categorieslist";
 import "./listing.css";
 
-function Listing() {
-  const { category } = useParams();
+function Listing({category}) {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -17,7 +16,7 @@ function Listing() {
     setTimeout(() => {
       try {
         // Filter the products based on the selected category or show all products
-        const filtered = categories.find((cat) => cat.category === category);
+        const filtered = categories.find((cat) => cat.name === category);
 
         if (filtered) {
           setFilteredProducts(filtered.products);

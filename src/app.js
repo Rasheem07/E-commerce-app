@@ -16,12 +16,12 @@ export default function App() {
     <Router>
       <Nav />
       <Routes>
-        <Route path="/E-commerce-app/about" element={<AboutPage />} />
-        <Route path="/E-commerce-app" exact element={<Main className="bg" set={setselectedCategory} set2={category} set3={setcategory}/>} />
-        <Route path="/E-commerce-app/contact" element={<ContactPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/" exact element={<Main className="bg" set={setselectedCategory} set2={category} set3={setcategory}/>} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route
-          path={`/E-commerce-app/${category}`} exact
-          element={<Listing selectedCategory={selectedCategory} />}
+          path={`/${category}`} exact
+          element={<Listing category={category} />}
         />
       </Routes>
       <Test />

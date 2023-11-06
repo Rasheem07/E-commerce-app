@@ -19,7 +19,7 @@ export function Category({ setselectedcategory, clickedCategory, setHandleClickO
         <div className='category-row'>
           {categories.map((category) => (
             <div className='col-md-3 col-lg-2 col-sm-6' key={category.id} onClick={() => handleClickOnCategories(category.name)}>
-              <Link onClick={() => setHandleClickOnCategory(category.name)} to={`/E-commerece-app/${clickedCategory}`}>
+              <Link onClick={() => setHandleClickOnCategory(category.name)} to={`/${clickedCategory}`}>
                 <div className='category-card'>
                   <img src={category.imageURL} alt={category.name} />
                   <p className='p-0 m-0 product-name'>{category.name}</p>
