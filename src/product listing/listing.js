@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { categories } from "../main/categorieslist";
 import "./listing.css";
 
-function Listing({category}) {
+function Listing({category, deals}) {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -17,8 +17,8 @@ function Listing({category}) {
       try {
         // Filter the products based on the selected category or show all products
         const filtered = categories.find((cat) => cat.name === category);
-
-        if (filtered) {
+        
+        if(filtered) {
           setFilteredProducts(filtered.products);
         } else {
           // Handle the case when the selected category is not found
@@ -62,13 +62,14 @@ function Listing({category}) {
         <div className="col-lg-9 col-md-8 col-sm-12">
           <div className="row">
             {filteredProducts.map((product) => (
-              <div key={product.id} className="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
-                <div className="pt-2 card product-card">
+              <div key={product.id} className="col-lg-4 col-md-6 col-sm-12 col-6 mb-4">
+                <div className="card product-card">
+                  <div className="product-image p-2">
                   <img
                     src={product.imageURL}
-                    className="card-img-top"
                     alt={product.name}
                   />
+                  </div>
                   <div className="card-body">
                     <h5 className="card-title">{product.name}</h5>
                     <p className="card-text">{product.price}</p>

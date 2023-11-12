@@ -4,12 +4,12 @@ import './index.css';
 import App from './app';
 import reportWebVitals from './reportWebVitals';
 
-window.addEventListener('beforeunload', (event) => {
-  // Cancel the event
-  event.preventDefault();
-  // Chrome requires returnValue to be set
-  event.returnValue = '';
-});
+// window.addEventListener('beforeunload', (event) => {
+//   // Cancel the event
+//   event.preventDefault();
+//   // Chrome requires returnValue to be set
+//   event.returnValue = '';
+// });
 
 
 const main = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,3 +23,14 @@ main.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+
+
+
+
+
+
+
+
+

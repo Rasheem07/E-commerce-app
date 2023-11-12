@@ -2,22 +2,42 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.12);
   }
   
+  .product-image{
+    width: 100% !important;
+    height: auto;
+    background-color: #fff;
+    mix-blend-mode: multiply !important;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .card-body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: #f2f2f2;
   }
   
   .card-title {
     font-size: 1.25rem;
   }
-
+  
   .product-card img{
     height: 160px;
+    max-width: 90% !important;
     object-fit: contain !important;
+    border-radius: 3px;
+    display: inline-block;
+  }
+
+  .coverimg{
+    object-fit: cover !important;
   }
   
   .loader{
@@ -35,23 +55,42 @@
   /* Add any other custom styles as needed */
   @keyframes load {
     20%{
-       margin: -7px;
-       transform: translate(35px, 0);
+      transform: translate(35px, 0);
+      margin: -7px;
+      display: none;
     }
     40%{
+      transform: translate(70px, 0);
       margin: -7px;
-       transform: translate(70px, 0);
+       display: block;
     }
     60%{
+      transform: translate(105px, 0);
       margin: -7px;
-       transform: translate(105px, 0);
+      display: none;
     }
     80%{
+      transform: translate(120px, 0);
       margin: -7px;
-       transform: translate(120px, 0);
     }
     100%{
+      transform: translate(150px, 0);
       margin: -7px;
-       transform: translate(150px, 0);
     }
   }
+@media only screen and (max-width: 560px) {
+  .card-title{
+    font-size:14px;
+    max-height: 32px;
+    max-lines: 2 !important;
+    /* initial-letter-align:initial; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .card-title::after{
+    content: '...';
+    position: relative;
+    font-weight: bold;
+  }
+}

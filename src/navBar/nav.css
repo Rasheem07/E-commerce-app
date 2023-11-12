@@ -15,8 +15,9 @@ a{
 
 .custom-autocomplete{
   z-index: 999;
-  margin: 1vh 0;
+  margin: 1vh 5vw !important;
 }
+
 #brand{
   margin-left: 2vw;
 }
@@ -64,7 +65,7 @@ a{
    margin: auto;
    position: relative;
    margin: 0;
-   margin-left: 3vw !important;
+   margin-left: 5vw !important;
   }
   
   

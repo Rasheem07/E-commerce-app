@@ -74,7 +74,7 @@ function handleClickOnSignup(){
   };
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark" style={{position: "sticky", top: "0", zIndex: "999"}}>
         {/* <div className="container"> */}
         <a className="navbar-brand" href="#" id="brand">
           <img
